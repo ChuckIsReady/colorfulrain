@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>池塘夜降彩色雨</title>
+	<meta charset="utf-8" />
+	<script src="./js/lufylegend-1.9.9.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/rain.js"></script>
+    <script src="./js/ripple.js"></script> 
+    <script src="./js/sputtering.js"></script>
+    <script src="./js/rainCloud.js"></script> 
+
+    
+    <link rel="stylesheet" href="./css/main.css"> 
+</head>
+<body>
+<div id="bgbox"></div>
+<div id="mylegend">loading...</div>
+<script type="text/javascript">
+LInit(20,"mylegend",640,480,main);
+</script>
+
+<div id="conctrl">
+<div id="buttonbox">
+    <div class="button" id="rainctrl" >切换下雨</div> 
+    <div class="button" id="colorctrl" >切换雨颜色</div> 
+    <div class="button" id="rain3" >只显示第三层</div> 
+    <div class="button" id="fps" >显示FPS</div> 
+</div>
+<div id="other">
+    <select name="" id="bg-select">
+        <option value="0">实际空间纹理</option>
+        <option value="1">清晨波纹荡漾</option>
+        <option value="2">清晨平静水面</option>
+        <option value="3">夜晚平静水面</option>
+        <option value="4">夜晚闪电风暴</option>
+    </select>
+    <span>雨:</span>
+    <input id="rainlevelslider" type="range"  min="1" max="20" step="1"/>
+    <span>风:</span>
+    <input id="windlevelslider" type="range"  min="-20" max="20" step="1"/>
+    <input type="checkbox" id="mute" value="1" /> <span>静音</span>
+    <input type="checkbox" id="listen-single" value="1" /> <span id="listen-display">监听雨滴</span>
+</div>
+
+</div>
+<audio id="s-day-ripple"src="./sound/day-ripple.mp3"  loop="loop"></audio>
+<audio id="s-day-ripple-bird"src="./sound/day-ripple-bird.mp3"  loop="loop"></audio>
+<audio id="s-night-slience"src="./sound/night-slience.mp3" loop="loop"></audio>
+<audio id="s-night-strom"src="./sound/night-strom.mp3" loop="loop"></audio>
+<audio id="s-huge-rain"src="./sound/huge-rain.mp3" loop="loop"></audio>
+<audio id="s-middle-rain"src="./sound/middle-rain.mp3" loop="loop"></audio>
+<audio id="s-wind"src="./sound/wind.mp3" loop="loop"></audio>
+
+<audio id="s-raindrop"src="./sound/raindrop.mp3" ></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop1"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop2"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop3"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop4"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop5"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop6"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop7"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop8"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop9"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop10"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop11"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop12"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop13"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop14"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop15"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop16"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop17"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop18"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop19"></audio>
+ <audio src="./sound/raindrop.mp3" id="s-raindrop20"></audio>
+
+<audio src="./sound/sputtering.mp3" id="s-sputtering1"></audio>
+<audio src="./sound/sputtering.mp3" id="s-sputtering2"></audio>
+<audio src="./sound/sputtering.mp3" id="s-sputtering3"></audio>
+<audio src="./sound/sputtering.mp3" id="s-sputtering4"></audio>
+<audio src="./sound/sputtering.mp3" id="s-sputtering5"></audio>
+
+<script src="./js/conctrl.js"></script>
+<script src="./js/sound.js"></script> 
+</body>
+</html>

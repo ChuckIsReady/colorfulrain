@@ -1,0 +1,84 @@
+/*本文件用于设置页面布局及页面字体等显示效果
+ */
+*{margin: 0;padding: 0;}
+body{ 
+	background-color: #ecf0f1;
+}
+#bgbox{
+	position: absolute;
+	background-image: url("../img/day-ripple.gif") ;
+	width: 640px;
+	height: 480px;
+	left: 50%;
+	margin-left: -320px;
+}
+#mylegend{
+	position: relative;
+
+
+}
+#mylegend div{
+	left: 50%;
+	margin-left: -320px !important;
+}
+#conctrl{
+	position: absolute;
+	width: 100%;
+	margin: 0 auto ;
+	  top: 490px;
+}
+#other{
+	width: 590px;
+	margin: 20px auto; 
+}
+
+#other span,#bg-select{
+    text-transform: uppercase;
+    text-align: center;
+    color: #1188f0;
+    font-weight: bold;
+    font-size: 16px;
+}
+#buttonbox{
+	margin: 0 auto;  
+ 	 width: 440px;
+}
+.button {
+    display: inline-block;
+    background: #1188f0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2e8cff), color-stop(100%,#1188f0));
+    background: -moz-linear-gradient(center top, #2e8cff 0%, #1188f0 100%);
+    -webkit-box-shadow: 0px 5px 0px 0px #006391, 0px -1px 0px 0px #1c95ff inset;
+    -moz-box-shadow: 0px 5px 0px 0px #006391, 0px -1px 0px 0px #1c95ff inset;
+    box-shadow: 0px 5px 0px 0px #006391, 0px -1px 0px 0px #1c95ff inset;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+    text-shadow: 0px 1px 0px #006ac7;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+.button:hover {
+    background: #1995fa;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2e8cff), color-stop(100%,#2e8cff));
+    background: -moz-linear-gradient(center top, #2e8cff 0%, #2e8cff 100%);
+}
+.button:active {
+    -webkit-box-shadow: 0px 2px 0px 0px #006391, 0px -1px 0px 0px #1491ff inset;
+    -moz-box-shadow: 0px 2px 0px 0px #006391, 0px -1px 0px 0px #1491ff inset;
+    box-shadow: 0px 2px 0px 0px #006391, 0px -1px 0px 0px #1491ff inset;
+    -webkit-transition: background-position 0.3s linear;
+    -moz-transition: background-position 0.3s linear;
+    -o-transition: background-position 0.3s linear;
+    transition: background-position 0.3s linear;
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    transform: translateY(3px);
+}
