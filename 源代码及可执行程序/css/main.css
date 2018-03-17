@@ -28,7 +28,7 @@ body{
 	  top: 490px;
 }
 #other{
-	width: 590px;
+	width: 630px;
 	margin: 20px auto; 
 }
 
@@ -41,7 +41,7 @@ body{
 }
 #buttonbox{
 	margin: 0 auto;  
- 	 width: 440px;
+ 	 width: 480px;
 }
 .button {
     display: inline-block;

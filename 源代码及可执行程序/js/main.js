@@ -142,7 +142,7 @@ function allInit(result){
     //显示第2个白天场景，将对应参数设置好  
     changestate(0,99);
     for (var i = rainLayercount -1 ; i >= 0; i--) {
-        rainCloudList[i].canrain = p;
+        rainCloudList[i].canrain = 1;
     };
     pauseAllRain();
 }
